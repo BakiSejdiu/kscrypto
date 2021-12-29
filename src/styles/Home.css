@@ -1,0 +1,159 @@
+.content .container {
+    display: flex;
+    align-items: center;
+
+}
+
+.content {
+    background-color: #f0f0f8;
+    padding: 30px 0px 100px 0px;
+
+}
+
+.content_text p {
+    color: gray;
+}
+
+.content .content_text,
+.content .content_image {
+    width: 50%;
+}
+
+.content_text h1,
+.content_text span {
+    font-size: 45px;
+}
+
+.content_text h1,
+.content_text span {
+    color: rgb(23, 25, 36);
+}
+
+.content .content_image {
+
+    height: 600px;
+    background: url('../../public/images/home1.png') no-repeat 100%;
+    background-size: contain;
+}
+
+.countdown {
+    margin-bottom: 20px;
+}
+
+.content .container button {
+    color: #fff;
+    background-color: rgb(80 114 238);
+    border: none;
+    width: 157px;
+    ;
+    font-size: 16px;
+    padding: 18px 18px;
+    margin-right: 7px;
+    border-radius: 7px;
+}
+
+.content .container button.btn {
+    background-color: #e09a00;
+    ;
+}
+
+
+.why-us {
+    padding: 100px 0px;
+    background-color: #fff;
+
+}
+
+.why-us h1 {
+    color: rgb(23, 25, 36);
+}
+
+
+.why_crypto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.why-image {
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #f0f0f8;
+    border-radius: 50%;
+    margin-top: 15px;
+
+}
+
+.why-title h1 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.description_crypto img {
+    height: 110px;
+    width: 110px;
+
+}
+
+.why-us .description_crypto h1 {
+    padding: 40px 0px 20px;
+}
+
+.description_crypto h4 {
+    color: gray;
+    line-height: 25px;
+}
+
+.description_crypto {
+    width: 33.33%;
+    flex-wrap: wrap;
+}
+
+.description_crypto:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .4s ease-out 0s;
+}
+
+
+@media (max-width: 960px) {
+    .content .container {
+        flex-direction: column;
+    }
+
+    .content .content_text,
+    .content .content_image,
+    .description_crypto,
+    .f1,
+    .f2,
+    .f3 {
+
+       
+        width: 100%;
+    }
+
+    .why_crypto {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-col1.f1, .footer-subscribe {
+        padding: 0;
+    }
+
+    .f2 {
+        padding: 50px 0px;
+        text-align: center;
+    }
+    .f3{
+        padding-bottom: 50px;
+    }
+
+}

@@ -1,0 +1,16 @@
+span.infoTime {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.clock span {
+    font-size: 45px;
+    margin-right: 20px;
+}
+
+.clock small {
+    font-size: small;
+    padding: 5px;
+}

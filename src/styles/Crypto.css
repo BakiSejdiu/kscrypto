@@ -1,0 +1,135 @@
+
+.cryptocurrency {
+  padding: 50px 0px;
+  background-color: #f0f0f8;
+}
+.cryptocurrency .crypto {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.cryptocurrency  h4, .cryptocurrency  span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+        .searchField {
+        display: flex;
+        justify-content: center;
+        width: 1200px;
+        flex-wrap: wrap;
+        text-align: center;
+  }
+  .searchField h1 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  input[type="search"] {
+    margin: 50px 0px;
+    width: 240px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+  .title {
+
+    line-height: 1.5;
+    color: rgb(23, 25, 36);
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .currency,  .head {
+    display:  grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    column-gap: 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .head {
+    padding: 12px 0px;
+  }
+
+  .load {
+    text-align: center;
+  }
+  .loading {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loading:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #f0f0f8 transparent #f0f0f8 transparent;
+  animation: loading 1.2s linear infinite;
+}
+  @keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+    .red{
+        color: #ea3943;
+      }
+
+  .green{
+      color: #16c784;
+    }
+
+  .currency img {
+        height: 24px;
+        width: 24px;
+        border-radius: 12px;
+
+  }
+
+  .name_currency {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.symbol, .rank {
+  text-transform: uppercase;
+  color: rgb(82, 75, 75);
+}
+
+
+
+@media (max-width: 960px){
+    .container {
+    width: 97%;}
+
+    .searchField {
+      width: 100%;
+    }
+
+    .cap, .supply, .market_cap, .circulating_supply, .symbol {
+      display: none;
+    }
+
+
+    .currency,  .head {
+    display:  grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+}
