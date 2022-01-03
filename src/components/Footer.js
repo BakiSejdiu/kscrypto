@@ -11,23 +11,23 @@ function Footer() {
                         <div className="footer-col1 f1">
                         <div className="logo">
                             <a href="#">
-                                <img src="https://perprogramera.com/wp-content/uploads/2021/01/logo.png" alt="logo" width='200px'/>
+                                <img src={'/images/logo.svg'} alt="logo" width='200px'/>
                             </a>
                         </div>
                         <div className="footer-icons">
                             <ul>
-                                <li><a href="#">
+                                <li><a href="/">
                                 <i className="fab fa-facebook"></i></a></li>
                                 <li>
-                                <a href="#">
+                                <a href="/">
                                 <i className="fab fa-instagram"></i></a>
                                 </li>
                                 <li>
-                                <a href="#">
+                                <a href="/">
                                 <i className="fab fa-twitter"></i></a>
                                 </li>
                                 <li>
-                                <a href="#">
+                                <a href="/">
                                 <i className="fab fa-linkedin"></i></a>
                                 </li>
                             </ul>

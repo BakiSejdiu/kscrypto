@@ -1,26 +1,41 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {useState} from 'react'
 
 function Navigation() {
+    const [clicked, setClicked] = useState(false)
+
+    function handleClick(){
+        setClicked(false)
+    }
+
     return (
-        <ul>
+        <>
+        <ul className={`nav ${clicked && 'open'}`}>
             <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={handleClick}>Home</Link>
             </li>
             <li>
-                <Link to="crypto">Crypto</Link>
+                <Link to="crypto" onClick={handleClick}>Crypto</Link>
             </li>
             <li>
-                <Link to="services">Services</Link>
+                <Link to="services" onClick={handleClick}>Services</Link>
             </li>
             <li>
-                <Link to="contact">Contact</Link>
+                <Link to="contact" onClick={handleClick}>Contact</Link>
             </li>
             <li>
-                <Link to="covid19">Covid-19</Link>
+                <Link to="covid19" onClick={handleClick}>Covid-19</Link>
             </li>
 
+    
         </ul>
+        <div className="menu-icon" onClick={() =>
+            {setClicked(!clicked)}
+        }>
+            { clicked ? <i className="fas fa-times"></i> : <i className='fas fa-bars'></i> }
+        </div>
+        </>
     )
 }
 

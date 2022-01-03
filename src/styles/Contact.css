@@ -13,18 +13,26 @@
     display: flex;
 }
 
-.contact-left, .contact-right {
+.contact-left,
+.contact-right {
     width: 50%;
 }
 
 .contact-left {
     margin: 0px 10px;
+
 }
+
+.contact-left p {
+    text-align: left;
+}
+
 .contact-right {
     text-align: center;
 }
 
-.fa-solid, .fas {
+.fa-solid,
+.fas {
     background-color: #fff;
     font-weight: 900;
     width: 46px;
@@ -38,29 +46,40 @@
     flex-wrap: wrap;
 }
 
-.form-row1, .form-row2, .form-row3{
+.form-row1,
+.form-row2,
+.form-row3 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.form-row1 input, .form-row2 input, textarea,.form-row button{
+.form-row1 input,
+.form-row2 input,
+textarea,
+.form-row button {
     margin: 0px 10px;
     margin-bottom: 15px;
 }
 
-.contact-icons {
-    padding-top: 7px;
-}
-.contact-icons p {
+.contact-icons a {
     color: #000;
+    display: block;
+    width: 250px;
+    margin-bottom: 10px;
 }
-.contact-icons p .fas {
+.contact-icons a .fas {
     color: gray;
 }
 
-.form-row input, .form-row textarea {
+.contact-icons a .fas:hover, .form-row button:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+.form-row input,
+.form-row textarea {
     width: 100%;
     border: none;
     border-radius: 7px;
@@ -74,7 +93,8 @@
 
 textarea {
     height: 140px;
-} 
+}
+
 .form-row button {
     border: none;
     border-radius: 7px;
@@ -87,10 +107,21 @@ textarea {
 }
 
 @media (max-width: 960px) {
+    .contact {
+        padding: 0px;
+    }
+
+    .contact-title {
+        padding-bottom: 15px;
+    }
+
     .contact-content {
         flex-direction: column;
     }
-    .contact-left, .contact-right {
+
+    .contact-left,
+    .contact-right {
         width: 100%;
     }
+
 }

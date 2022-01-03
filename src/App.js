@@ -6,6 +6,7 @@ import Crypto from './pages/Crypto';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Covid19 from './pages/Covid19';
+import Coin from './pages/Coin';
 
 function App() {
   return (
@@ -15,11 +16,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="crypto" element={<Crypto/>}/>
+        <Route path="crypto/:id" element={<Coin/>}/>
         <Route path="services"  element={<Services/>}/>
         <Route path="contact" element={<Contact/>}/>
         <Route path="covid19" element={<Covid19/>}/>
       </Routes>
       </BrowserRouter>
+      
       
     </div>
   );

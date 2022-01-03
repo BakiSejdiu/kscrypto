@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/logo.svg" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,16 +21,10 @@
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`    -->
+    -->
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600;800&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 
     * {
       box-sizing: border-box;
@@ -47,19 +41,8 @@
       padding: 0;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    span,
-    li,
-    button,
-    input,
-    textarea {
-      font-family: 'Signika Negative', sans-serif;
+    *{
+      font-family: 'DM Sans', sans-serif;
     }
 
     li {
@@ -79,8 +62,15 @@
     a {
       cursor: pointer;
     }
+
+    @media (max-width: 960px) {
+      .container {
+        width: 100%;
+        padding: 3%;
+      }
+    }
   </style>
-  <title>React App</title>
+  <title>CryptoKs</title>
 </head>
 
 <body>

@@ -1,0 +1,38 @@
+.coin {
+    background-color: #f0f0f8;
+    padding-bottom: 250px;
+    display: flex;
+    align-items: center;
+
+}
+.coin-content {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.coin-content button {
+    padding: 0;
+    background-color: #fff;
+}
+
+.coin-content button .fa-chevron-circle-left:hover {
+    background-color: gray;
+    color: #fff;
+}
+
+.coin-content {
+    padding-top: 30px;
+}
+.coin-view {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.coin-header h4{
+    text-transform: uppercase;
+}
+.coin-text p{
+    text-align: justify;
+}

@@ -50,7 +50,7 @@ footer {
 }
 
 .footer-links ul li a {
-    color: #000;
+    color: #000000cf;
 }
 
 .footer-col1.f1, .footer-subscribe {
@@ -71,5 +71,43 @@ footer {
 
 .footer-subscribe button {
     background-color: rgb(197, 194, 194);
+    color: rgb(66, 63, 63);
     width: 30%;
+    font-size: 14px;
+}
+
+@media (max-width: 960px){
+
+    footer {
+        padding: 50px 0px
+    }
+    .f1,
+    .f2,
+    .f3 {
+        width: 100%;
+    }
+
+    
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-col1.f1, .footer-subscribe {
+        padding: 0;
+    }
+
+    .f2 {
+        padding: 30px 0px;
+        text-align: center;
+    }
+    .f3{
+        padding-bottom: 50px;
+    }
+    .footer-icons {
+        margin-top: 15px;
+    }
+    .footer-subscribe input {
+        width: 60%;
+    }
+
 }

@@ -1,11 +1,17 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
-import SearchCoin from '../components/SearchCoin'
+import { Link } from 'react-router-dom'
+
+
 import '../styles/Crypto.css'
 function Crypto() {
 
     const [currency, setCurrency] = useState()
     const [loading, setLoading] = useState(true)
+    const [search, setSearch] = useState('')
+
+
+
 
     async function fetchCurrency(){
         const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false`)
@@ -22,16 +28,12 @@ function Crypto() {
         fetchCurrency()
     }, [])
 
-    function search(query){
+    function handleItem(e){
+        setSearch(e.target.value)
+    }
+    
 
-        const filtered_currency = currency.filter((coin) => 
-        coin.name.toLowerCase().includes(query.toLowerCase()))
-        
-        setCurrency(filtered_currency)
-    
-}
-    
-    return (
+    return(
 
         <>
         <div className="cryptocurrency">
@@ -40,7 +42,10 @@ function Crypto() {
         
             <div className='searchField'>
                 <h1>Cryptocurrency Market</h1>
-                <SearchCoin search ={search}/>
+                <input type="search" 
+                    autoComplete='off'
+                    onChange={handleItem}
+                    placeholder='Search'/>
                 </div>
             
         <div className="crypto">
@@ -58,10 +63,24 @@ function Crypto() {
             {
                 currency 
                 &&
-                currency.map(c => 
-                        <div key={c.id} className='currency'>
+                currency
+                .filter((coin) =>
+                {
+                    if(search !=='')
+                    {
+                        return coin.name.toLowerCase().includes(search.toLocaleLowerCase())
+                    } 
+                        else {
+                            return coin
+                        }
+                }
+            )
+                .map(c => 
+                    <Link to={`${c.id}`} key={c.id}>
+                        <div  className='currency'>
                             
                             <span className='rank'>{c.market_cap_rank}</span>
+                            
                             <div className='name_currency'>
                                 <img src={c.image} alt='coin'/>
                                 <h4>{c.name}</h4>
@@ -77,11 +96,11 @@ function Crypto() {
                             minimumFractionDigits: 2,
                             maximumFractionDigits: 2})}</span>
                             
-                        </div>)
-                
+                            
+                        </div>
+                        </Link>
+                        )
             }
-            
-            
             </div>
             </div>
         </div>

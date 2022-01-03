@@ -1,0 +1,46 @@
+
+.buy {
+  padding: 200px 0px;
+}
+.buy-content {
+  display: flex;
+}
+.buy-col {
+  width: 40%;
+}
+
+.buy-buton {
+  width: 20%;
+  align-self: end;
+}
+input[type="number"] {
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  background: #f0f0f8;
+  border-radius: 10px;
+}
+.buy-title {
+  text-align: center;
+}
+
+.buy-now {
+  border-radius: 10px;
+}
+
+.buy-now:hover{
+  background-color: gray;
+  color: #fff;
+  
+}
+
+@media (max-width: 960px){
+  .buy-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .buy-col, .buy-buton {
+      width: 100%;
+      padding-top: 30px;
+  }
+}

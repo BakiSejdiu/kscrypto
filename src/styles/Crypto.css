@@ -1,11 +1,22 @@
 
 .cryptocurrency {
-  padding: 50px 0px;
+  padding: 50px 0px 400px 0px;
   background-color: #f0f0f8;
 }
 .cryptocurrency .crypto {
     background-color: #fff;
     border-radius: 10px;
+}
+
+.cryptocurrency .crypto a {
+  color: #000;
+}
+
+.cryptocurrency .crypto .currency:hover{
+  background-color: #4c628c;
+  /* color: #f0f0f8; */
+  transition: all 0.5s ease-in-out;
+
 }
 
 .cryptocurrency  h4, .cryptocurrency  span {
@@ -70,7 +81,7 @@
   margin: 8px;
   border-radius: 50%;
   border: 6px solid #fff;
-  border-color: #f0f0f8 transparent #f0f0f8 transparent;
+  border-color: #4c628c transparent #4c628c transparent;
   animation: loading 1.2s linear infinite;
 }
   @keyframes loading {
@@ -112,10 +123,10 @@
 
 
 @media (max-width: 960px){
-    .container {
+    .cryptocurrency.container {
     width: 97%;}
 
-    .searchField {
+    .cryptocurrency .searchField {
       width: 100%;
     }
 

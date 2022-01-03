@@ -12,6 +12,7 @@
 
 .content_text p {
     color: gray;
+    text-align: left;
 }
 
 .content .content_text,
@@ -24,9 +25,22 @@
     font-size: 45px;
 }
 
-.content_text h1,
+.content_text h1
+{
+    color: #a79657;
+}
+
+.buton-buytokens {
+    color: #fff;
+}
+
+.buton-download {
+    color:#fff;
+}
+
+
 .content_text span {
-    color: rgb(23, 25, 36);
+    color: #74693e;
 }
 
 .content .content_image {
@@ -42,10 +56,10 @@
 
 .content .container button {
     color: #fff;
-    background-color: rgb(80 114 238);
+    background-color: #3259d6;
     border: none;
     width: 157px;
-    ;
+    text-align: center;
     font-size: 16px;
     padding: 18px 18px;
     margin-right: 7px;
@@ -54,7 +68,7 @@
 
 .content .container button.btn {
     background-color: #e09a00;
-    ;
+    text-align: center;
 }
 
 
@@ -89,8 +103,12 @@
 
 }
 
-.why-title h1 {
+.why-title h1,p {
     text-align: center;
+    padding-bottom: 15px;
+}
+
+.why-title p {
     padding-bottom: 40px;
 }
 
@@ -121,39 +139,30 @@
 
 
 @media (max-width: 960px) {
+
+    .content {
+
+        padding:0px;
+    }
     .content .container {
         flex-direction: column;
     }
 
+    .content_text p {
+        text-align: center;
+    }
+
     .content .content_text,
     .content .content_image,
-    .description_crypto,
-    .f1,
-    .f2,
-    .f3 {
+    .description_crypto
+    {
 
-       
+        text-align: center;
         width: 100%;
     }
 
     .why_crypto {
         flex-direction: column;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .footer-col1.f1, .footer-subscribe {
-        padding: 0;
-    }
-
-    .f2 {
-        padding: 50px 0px;
-        text-align: center;
-    }
-    .f3{
-        padding-bottom: 50px;
     }
 
 }

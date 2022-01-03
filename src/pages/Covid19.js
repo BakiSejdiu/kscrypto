@@ -5,18 +5,27 @@ import '../styles/Covid19.css'
 function Covid19() {
 
     const [countryData, setCountryData] = useState();
-
+    const [loading, setLoading] = useState(true);
+    const [search, setSearch] = useState('')
 
     async function fetchCountryData(){
         const response = await fetch(`https://corona.lmao.ninja/v2/countries`)
         const data = await response.json()
 
         setCountryData(data)
-    }
+        setLoading(false);
+    } 
 
+    
     useEffect(() => {
         fetchCountryData()
-    }, [])
+    },[]);
+
+    function handleItem(e){
+
+        setSearch(e.target.value)
+    }
+
 
     return (
         <>  
@@ -24,16 +33,36 @@ function Covid19() {
             <div className="container">
             <div className='covid-19_title'>
                 <h1>Covid-19 cases by country</h1>
+                <input type="search" 
+                    autoComplete='off'
+                    onChange={handleItem}
+                    placeholder='Search'/>
             </div>
+            <div className='load'>
+                {loading && <p className='loading'></p>}
+                </div>
         <div className='covid-19_content'>
+            
             {
             countryData &&
-            countryData.map(country => 
+            countryData
+            .filter((mycountry) =>
+                {
+                    if(search !=='')
+                    {
+                        return mycountry.country.toLowerCase().includes(search.toLocaleLowerCase())
+                    } 
+                        else {
+                            return mycountry
+                        }
+                }
+            )
+            .map(country => 
                 
                     <div className='covid_widget' key={country.country}>
                         <div className="covid_col1">
                             <h5>{country.country}</h5>
-                            <img src={country.countryInfo.flag}/>
+                            <img src={country.countryInfo.flag} alt='flag'/>
                             <p>All cases: <span>{country.cases}</span></p>
                             
                         </div>

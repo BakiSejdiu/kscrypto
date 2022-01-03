@@ -1,0 +1,104 @@
+.download {
+    background-color: #f0f0f8;
+    padding: 100px 0px;
+}
+
+.download-title {
+    display: flex;
+    justify-content: space-between;
+}
+.download-cards{
+    display: flex;
+}
+
+.download-card {
+    width: 50%;
+}
+
+.download-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.card1 {
+    margin-right: 20px;
+}
+
+.card2 {
+    margin-left: 20px;
+}
+.download-card-title p, button {
+
+        text-align: left;
+        padding-bottom: 10px;
+        
+}
+
+
+.download-card-title button {
+    border-radius: 10px;
+    font-size: 20px;
+}
+/* .download-image{
+    align-self: center;
+} */
+
+.btn-download {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.link {
+    color: gray;
+}
+
+
+.fa-apple, .fa-google-play {
+    font-size: 25px;
+    line-height: 25px;
+    margin-right: 12px;
+    color: gray;
+    
+}
+
+.downloadimages
+{
+    margin-bottom: -25px;
+}
+
+@media (max-width: 960px) {
+
+    .download-title{
+        flex-direction: column;
+        text-align: center;
+}
+    .download-cards {
+        flex-wrap: wrap;
+    }
+
+    .download-card {
+        width: 100%;
+    }
+
+    .download-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card1 {
+        margin-right: 0px;
+    }
+    
+    .card2 {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
