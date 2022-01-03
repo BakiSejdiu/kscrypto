@@ -18,7 +18,8 @@ function Coin() {
         const response = await fetch(`https://api.coingecko.com/api/v3/coins/${id}`)
         const data = await response.json()
 
-        setCoin(data)
+        data.id === undefined ? navigator('/404'):setCoin(data)
+        
 
         setLoading(false)
     }

@@ -27,7 +27,6 @@ function Navigation() {
             <li>
                 <Link to="covid19" onClick={handleClick}>Covid-19</Link>
             </li>
-
     
         </ul>
         <div className="menu-icon" onClick={() =>

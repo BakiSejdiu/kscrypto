@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Covid19 from './pages/Covid19';
 import Coin from './pages/Coin';
+import Error404 from './pages/Error404';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="services"  element={<Services/>}/>
         <Route path="contact" element={<Contact/>}/>
         <Route path="covid19" element={<Covid19/>}/>
+        <Route path="*" element={<Error404/>}/>
       </Routes>
       </BrowserRouter>
       

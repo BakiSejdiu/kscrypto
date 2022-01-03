@@ -10,7 +10,7 @@ function Footer() {
                         <div className="footer-content">
                         <div className="footer-col1 f1">
                         <div className="logo">
-                            <a href="#">
+                            <a href="/">
                                 <img src={'/images/logo.svg'} alt="logo" width='200px'/>
                             </a>
                         </div>

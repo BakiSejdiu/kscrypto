@@ -144,10 +144,12 @@
 
         padding:0px;
     }
-    .content .container {
+    .content .container {   
         flex-direction: column;
     }
-
+    .content_text h1, .content_text span {
+        font-size: 37px;
+    }
     .content_text p {
         text-align: center;
     }
