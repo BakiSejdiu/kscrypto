@@ -12,7 +12,7 @@ CryptoKs website created with ReactJS - https://cryptoks.netlify.app/
 
 **` git clone https://github.com/BakiSejdiu/kscrypto.git `**
 
-**2.** **Install node_modules** in terminal: 
+**2.** Install **node_modules** in terminal: 
 
 **`npm install `**
 
