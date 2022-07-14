@@ -3,7 +3,7 @@ CryptoKs website created with ReactJS - https://cryptoks.netlify.app/
 
 ## Links 
 - [Repository](https://github.com/BakiSejdiu/kscrypto)
-- [Live Project](https://https://cryptoks.netlify.app/)
+- [Live Project](https://cryptoks.netlify.app/)
 - [CoinGecko API](https://www.coingecko.com/en/api)
 - [Covid-19 API](https://corona.lmao.ninja/)
 
