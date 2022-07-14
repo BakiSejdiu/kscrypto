@@ -11,7 +11,7 @@ function Countdown() {
   async function setCountdown() {
 
     const now = new Date();
-    const end = new Date("January 30,2022")
+    const end = new Date("December 30,2022")
 
     const nowTime = now.getTime();
     const endTime = end.getTime();
