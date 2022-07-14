@@ -1,2 +1,2 @@
 # CryptoKs Website 
-CryptoKs website created with React js  - Bootcamp 21 / 22 - Per programera
+CryptoKs website created with React js - https://cryptoks.netlify.app/
