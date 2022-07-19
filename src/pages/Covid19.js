@@ -9,7 +9,7 @@ function Covid19() {
     const [search, setSearch] = useState('')
 
     async function fetchCountryData(){
-        const response = await fetch(`https://corona.lmao.ninja/v2/countries`)
+        const response = await fetch(`https://disease.sh/v3/covid-19/countries`)
         const data = await response.json()
 
         setCountryData(data)
