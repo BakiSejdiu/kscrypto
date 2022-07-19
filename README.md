@@ -5,7 +5,7 @@ CryptoKs website created with ReactJS - https://cryptoks.netlify.app/
 - [Repository](https://github.com/BakiSejdiu/kscrypto)
 - [Live Project](https://cryptoks.netlify.app/)
 - [CoinGecko API](https://www.coingecko.com/en/api)
-- [Covid-19 API](https://corona.lmao.ninja/)
+- [Covid-19 API](https://disease.sh)
 
 ## Usage
 **1.** **Download** the project as **ZIP** or **Clone** it via:
